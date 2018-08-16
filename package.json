@@ -1,19 +1,39 @@
 {
-  "name": "visitcard",
+  "name": "mycard",
   "version": "1.0.0",
-  "description": "",
+  "description": "\"# mycard\"",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Hello, World!\"",
+    "build": "gulp build",
+    "deploy": "gulp deploy",
+    "start": "npm run build && gulp serve"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mrssanna/visitcard.git"
+    "url": "git+https://github.com/mrssanna/mycard.git"
   },
-  "author": "Anna",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mrssanna/visitcard/issues"
+  "devDependencies": {
+    "autoprefixer": "^9.0.1",
+    "browser-sync": "^2.24.6",
+    "css-mqpacker": "^7.0.0",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-less": "^4.0.1",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-svgstore": "^6.1.1",
+    "run-sequence": "^2.2.1",
+    "gulp-gh-pages-with-updated-gift": "^0.5.4"
   },
-  "homepage": "https://github.com/mrssanna/visitcard#readme"
+  "bugs": {
+    "url": "https://github.com/mrssanna/mycard/issues"
+  },
+  "homepage": "https://github.com/mrssanna/mycard#readme"
 }

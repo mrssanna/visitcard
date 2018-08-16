@@ -1,0 +1,27 @@
+//mixin for generation of media respond
+.respondTo(@device, @content) {
+  & when (@device = tablet) {
+    @media (min-width: @mediaWidthTablet) { @content(); }
+  }
+  & when (@device = desktop) {
+    @media (min-width: @mediaWidthDesktop) { @content(); }
+  }
+  //only mobile
+  & when (@device = onlymobile) {
+    @media (max-width: @mediaWidthMobileOnly) { @content(); }
+  }
+}
+
+.visuallyHidden{
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

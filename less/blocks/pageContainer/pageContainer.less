@@ -1,0 +1,17 @@
+@import "../../variables";
+@import "../../mixin";
+
+.pageContainer {
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  .respondTo (tablet, {
+    padding: 0 40px;
+  });
+
+  .respondTo (desktop, {
+    width: 1200px;
+    padding: 0 65px;
+  });
+}
